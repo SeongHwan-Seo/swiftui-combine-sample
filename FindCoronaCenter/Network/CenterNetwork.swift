@@ -24,9 +24,9 @@ class CenterNetwork {
         }
         
         var request = URLRequest(url: url)
-        request.setValue("API KEY를 입력하세요.",
-                         forHTTPHeaderField: "Authorization"
-        )
+        request.setValue("API Key 를 입력하세요.",
+                                 forHTTPHeaderField: "Authorization"
+                )
         
         return session.dataTaskPublisher(for: request)
             .tryMap {
